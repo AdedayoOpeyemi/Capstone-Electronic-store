@@ -1,0 +1,92 @@
+body {
+    min-width: 443px;
+}
+
+.top-nav-bar {
+  background: #383838;
+  color: #d35266;
+}
+
+#collapsibleNavbar {
+  right: 40px;
+}
+
+.top-nav-bar a {
+  color: inherit!important;
+}
+
+.navbar-brand {
+  color: white!important;
+}
+
+.fa-dice-d20 {
+  color: #d35266;
+}
+
+.fa-dice-d20::before {
+    padding-right: 0.5rem;
+}
+
+.fa-home::before,
+.fa-cart-arrow-down::before,
+.fa-border-none::before,
+.fa-envelope::before {
+  padding-right: 0.5rem;
+}
+
+.post-ad {
+  background: #d35266;
+  color: white;
+}
+
+.prof-pics {
+    width: 40px;
+    height: 40px;
+    border-radius:50%
+}
+
+.messages {
+    display: flex;
+    align-items: center;
+}
+
+
+
+@media screen and (min-width: 545px) {
+    .nav-cart-1 {
+        display: block!important;
+    }
+
+    .nav-cart-2 {
+        display: none;
+    }
+  
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+    .navbar {
+        padding-right: 10%!important;
+        padding-left: 10%!important;
+    }
+    #collapsibleNavbar {
+        right: 30px;
+        flex-grow: 0!important;
+    }
+/* 
+    .main-menu {
+        padding-left: 100px;
+    } */
+}
+
+@media screen and (min-width: 1024px) {
+    .collapsibleNavbar {
+        right: 100px;
+    }
+
+    .main-menu li {
+        margin-right: 1vw;
+    }
+}
