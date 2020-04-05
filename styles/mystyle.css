@@ -50,6 +50,15 @@ body {
     align-items: center;
 }
 
+.page-name {
+    text-align: center;
+}
+
+.page-name h1 {
+    color: white;
+
+}
+
 .search-section {
     background: #d35266;
 }
@@ -57,7 +66,6 @@ body {
 .filter-selector {
     display: flex;
     flex-direction: column;
-    width: 80%;
     padding: 1rem;
 }
 
@@ -95,12 +103,21 @@ body {
 @media screen and (min-width: 768px) {
 
     .navbar {
-        padding-right: 10%!important;
-        padding-left: 10%!important;
+        padding-right: 7%!important;
+        padding-left: 7%!important;
     }
     #collapsibleNavbar {
         right: 30px;
         flex-grow: 0!important;
+    }
+
+    .filter-selector {
+        flex-direction: row;
+        max-width: 992px;
+    }
+
+    .search-section {
+        padding: 3rem;
     }
 /* 
     .main-menu {
@@ -115,5 +132,10 @@ body {
 
     .main-menu li {
         margin-right: 1vw;
+    }
+
+    .navbar {
+        padding-right: 15%!important;
+        padding-left: 15%!important;
     }
 }
