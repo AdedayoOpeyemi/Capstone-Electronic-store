@@ -73,9 +73,9 @@ nav {
 
 footer li a,
 footer p {
-  color: #888888!important;
+  color: #888 !important;
   font-weight: 600;
-  font: 14px;
+  font-size: 14px;
   line-height: 1rem;
 }
 
@@ -189,7 +189,7 @@ select {
 
 .product {
   margin: 10px 0;
-  min-height:230px;
+  min-height: 230px;
 }
 
 .bordered-product {
@@ -257,7 +257,7 @@ label {
 
 .footer-about i {
   font-size: 32px;
-  color: #888888;
+  color: #888;
 }
 
 .filters-footer {
@@ -270,14 +270,19 @@ label {
 
 .filter-select h6 {
   font-family: "Gotham-Rounded-Bold", sans-serif;
-  color: #888888;
+  color: #888;
   font-weight: 800;
   border-bottom: solid 1px #ccc;
 }
 
-.filter-select label{
+.filter-select label {
   font-family: "Gotham-Rounded-Light", sans-serif;
-  color: #888888;
+  color: #888;
+}
+
+.result-container {
+  border: solid 1px #ccc;
+  padding: 15px;
 }
 
 .result-container:nth-child(even) {
@@ -305,14 +310,9 @@ label {
   flex-grow: 1;
 }
 
-.result-container {
-  border: solid 1px #ccc;
-  padding: 15px;
-}
-
 .search-list-detail h5 {
   font-family: "Helvetica-Neue-Bold", sans-serif;
-  color: #888888;
+  color: #888;
   margin-bottom: 0;
 }
 
@@ -320,19 +320,19 @@ label {
   font-family: "Helvetica-Neue-Bold", sans-serif;
   color: #d35266;
   font-size: 16px;
-  font-weight:900;
+  font-weight: 900;
 }
 
 .search-list-detail p {
   font-family: "Helvetica-Neue-light", sans-serif;
-  color: #888888;
+  color: #888;
   font-size: 16px;
   font-weight: 600;
 }
 
 .location-detail {
-  font-family: "Helvetica-Neue-medium", sans-serif!important;
-  color: #888888!important;
+  font-family: "Helvetica-Neue-medium", sans-serif !important;
+  color: #888 !important;
 }
 
 .price-detail {
@@ -341,11 +341,11 @@ label {
   color: white;
 }
 
-@media screen and (min-width: 500px){
+@media screen and (min-width: 500px) {
   .product {
     min-height: 320px;
   }
-  
+
   .product-image {
     height: 250px;
   }
@@ -353,7 +353,7 @@ label {
 
 @media screen and (min-width: 545px) {
   .nav-cart-1 {
-    display: block!important;
+    display: block !important;
   }
 
   .nav-cart-2 {
@@ -363,12 +363,13 @@ label {
 
 @media screen and (min-width: 768px) {
   .navbar {
-    padding-right: 7%!important;
-    padding-left: 7%!important;
+    padding-right: 7% !important;
+    padding-left: 7% !important;
   }
+
   #collapsibleNavbar {
     right: 30px;
-    flex-grow: 0!important;
+    flex-grow: 0 !important;
   }
 
   .filter-selector {
@@ -377,7 +378,7 @@ label {
   }
 
   .filter-selector a {
-    margin-left: 1rem!important;
+    margin-left: 1rem !important;
   }
 
   .filter-select {
@@ -393,7 +394,7 @@ label {
     border-right: none;
     border-left: none;
   }
-    
+
   .result-listing-image {
     min-width: 250px;
     height: 150px;
@@ -417,7 +418,7 @@ label {
   }
 
   .navbar {
-    padding-right: 10%!important;
-    padding-left: 10%!important;
+    padding-right: 10% !important;
+    padding-left: 10% !important;
   }
 }
