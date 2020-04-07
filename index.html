@@ -366,14 +366,14 @@
       </main>
 
       <footer class="container-xl">
-        <div class="row">
-          <div class="col-md-6 col-lg-3 footer-categories">
+        <div class="row mx-0">
+          <div class="col-md-6 col-lg-3 footer-categories order-lg-1">
 
-            <h5>Categories</h5>
-            <br>
+            <h4>Categories</h4>
+  
             
 
-              <ul class="footer-navbar two-column-list list-style-type-none">
+              <ul class="footer-navbar  list-style-type-none">
                 <li><a href="#" class="footer-navlink">School</a></li>
                 <li><a href="#" class="footer-navlink">Colleges</a></li>
                 <li><a href="#" class="footer-navlink">Crash Courses</a></li>
@@ -392,9 +392,9 @@
           
           </div>
 
-          <div class="col-md-6 col-lg-3 footer-navigation">
-            <h5>Navigation</h5>
-            <br>
+          <div class="col-md-6 col-lg-3 footer-navigation order-lg-2">
+            <h4>Navigation</h4>
+    
             
 
               <ul class="footer-navbar two-column-list list-style-type-none">
@@ -409,12 +409,9 @@
           
           </div>
 
-          <div class="col-md-6 col-lg-4 footer-about">
-            <h5>Categories</h5>
-            <br>
-            
+          <div class="col-md-6 col-lg-3 footer-about">
 
-            <a class="navbar-brand" href="#"><i class="fas fa-dice-d20">ACCU</i></a>
+            <h3><i class="fas fa-dice-d20">ACCU</i> </h3>
 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
               sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -423,13 +420,29 @@
           
           </div>
 
-          <div class="col-md-6 col-lg-2 footer-options">
-            <h5>Categories</h5>
-            <br>
+          <div class="col-md-6 col-lg-3 footer-options order-lg-3">
             
+            <form class="filter-selector mx-auto flex-column align-items-end">
 
-            <form class="filter-selector mx-auto">
-              <select class="filters">
+              <div class="d-flex align-items-center">
+
+                <label for="language-select">Language</label>
+              <select class="filters-footer" id="language-select">
+                <option value="0">Categories</option>
+              <option value="1">School</option>
+              <option value="2">Colleges</option>
+              <option value="3">Crash Courses</option>
+              <option value="4">Photoshop</option>
+              <option value="5">Coding</option>
+              </select>
+              </div>
+              
+
+              <div class="d-flex align-items-center">
+
+                <label for="location-select">Location</label> 
+
+              <select class="filters-footer" id="location-select">
                 <option value="0">Categories</option>
               <option value="1">School</option>
               <option value="2">Colleges</option>
@@ -438,16 +451,15 @@
               <option value="5">Coding</option>
               </select>
 
-              <select class="filters">
-                <option value="0">Categories</option>
-              <option value="1">School</option>
-              <option value="2">Colleges</option>
-              <option value="3">Crash Courses</option>
-              <option value="4">Photoshop</option>
-              <option value="5">Coding</option>
-              </select>
 
-              <select class="filters">
+              </div>
+
+             
+
+              <div class="d-flex align-items-center">
+
+                <label for="currency-select">Currency</label>
+              <select class="filters-footer" id="currency-select">
                 <option value="0">Categories</option>
               <option value="1">School</option>
               <option value="2">Colleges</option>
@@ -455,12 +467,19 @@
               <option value="4">Photoshop</option>
               <option value="5">Coding</option>
               </select>
+              </div>
+              
           
           </div>
 
         </div>
 
       </footer>
+
+      <diV>
+        <span>Copyright (c) 2020. This site was built by Opeyemi</span>
+
+      </diV>
 
 
 
