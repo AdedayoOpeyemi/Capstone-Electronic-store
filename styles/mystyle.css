@@ -134,6 +134,15 @@ nav {
     padding: 1rem;
 }
 
+.filter-selector select,
+.filter-selector input{
+  flex-grow: 1;
+}
+
+.filter-selector a {
+  width: 100px;
+}
+
 select {
   background: white;
 }
@@ -266,9 +275,24 @@ label {
   margin-left: 20px;
 }
 
+.filter-select {
+  padding: 15px;
+}
+
+.filter-select h6 {
+  font-family: "Gotham-Rounded-Bold", sans-serif;
+  color: #888888;
+  font-weight: 800;
+  border-bottom: solid 1px #ccc;
+}
+
 .filter-select label{
   font-family: "Gotham-Rounded-Light", sans-serif;
   color: #888888;
+}
+
+.result-container:nth-child(even) {
+  background: white;
 }
 
 .result-listing-image {
@@ -371,8 +395,13 @@ label {
         max-width: 992px;
     }
 
+    .filter-selector a {
+      margin-left: 1rem!important;
+    }
+
     .filter-select {
       min-width: 200px;
+      margin-top: 2rem;
     }
 
     .search-section {
