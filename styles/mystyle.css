@@ -284,8 +284,40 @@ label {
 }
 
 .result-container {
-  border: solid 1px red;
+  border: solid 1px #ccc;
   padding: 15px;
+}
+
+.search-list-detail h5 {
+  font-family: "Helvetica-Neue-Bold", sans-serif;
+  color: #383838;
+  margin-bottom: 0;
+}
+
+.condition-detail {
+  font-family: "Helvetica-Neue-Bold", sans-serif;
+  color: #d35266;
+  font-size: 16px;
+  font-weight:900;
+}
+
+.search-list-detail p {
+
+  font-family: "Helvetica-Neue-light", sans-serif;
+  color: #888888;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.location-detail {
+  font-family: "Helvetica-Neue-medium", sans-serif!important;
+  color: #383838!important;
+}
+
+.price-detail {
+  background: #d35266;
+  padding: 10px;
+  color: white;
 }
 
 @media screen and (min-width: 500px){
@@ -338,17 +370,25 @@ label {
         padding: 3rem;
     }
 
+    .result-container {
+      border-right: none;
+      border-left: none;
+    }
+    
+
     .result-listing-image {
-      width: 200px;
+      min-width: 250px;
       height: 150px;
     }
 
     .result-listing {
       padding: 15px 0 15px 0;
-      border-left: solid 1px red;
-      border-right: solid 1px red;
+      border-left: solid 1px #ccc;
+      border-right: solid 1px #ccc;
       flex-grow: 1;
     }
+
+    
   
 
     
