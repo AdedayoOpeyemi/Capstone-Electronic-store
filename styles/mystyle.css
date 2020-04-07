@@ -216,6 +216,7 @@ select {
 footer {
   font-family: "Helvetica-Neue-Medium" sans-serif;
   padding: 15px;
+  background: white;
 }
 
 footer hr {
@@ -259,6 +260,23 @@ label {
 
 .filters-footer {
   margin-left: 20px;
+}
+
+.result-listing-image {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.result-listing-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.result-listing-details {
+  flex-grow: 1;
 }
 
 @media screen and (min-width: 500px){
@@ -305,6 +323,11 @@ label {
 
     .search-section {
         padding: 3rem;
+    }
+
+    .result-listing-image {
+      width: 200px;
+      height: 150px;
     }
 /* 
     .main-menu {
