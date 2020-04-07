@@ -62,6 +62,10 @@ body {
     background: #f5f5f5;
 }
 
+nav {
+  font-family: "Gotham-Bold", sans-serif;
+}
+
 .top-nav-bar {
   background: #383838;
   color: #d35266;
@@ -290,7 +294,7 @@ label {
 
 .search-list-detail h5 {
   font-family: "Helvetica-Neue-Bold", sans-serif;
-  color: #383838;
+  color: #888888;
   margin-bottom: 0;
 }
 
@@ -311,7 +315,7 @@ label {
 
 .location-detail {
   font-family: "Helvetica-Neue-medium", sans-serif!important;
-  color: #383838!important;
+  color: #888888!important;
 }
 
 .price-detail {
