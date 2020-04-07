@@ -156,13 +156,16 @@ select {
 
 .listing-category {
     padding: 30px 15px 30px 15px;
+}
 
+.category-header {
+  padding-left: 3rem;
 }
 
 .category-title-details {
     display: inline-block;
     font-family: "Helvetica-Neue-Medium" sans-serif!important;
-    /* color: #888888; */
+    margin-right: 5px;
 }
 
 .category-container {
