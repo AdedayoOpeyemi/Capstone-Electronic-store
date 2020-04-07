@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>News Week Clone</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/50245aec8d.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/mystyle.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <nav class="navbar px-md-5 navbar-expand-lg top-nav-bar justify-content-between navbar-dark position-relative">
+        <ul class="nav main-menu">
+            <li class="nav-item">
+
+              <a class="navbar-brand" href="#"><i class="fas fa-dice-d20">ACCU</i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-home active">HOME</i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-border-none">CATEGORY</i></a>
+            </li>
+            <li class="nav-item d-none nav-cart-1">
+                <a class="nav-link" href="#"><i class="fas fa-cart-arrow-down">CART</i></a>
+              </li>
+              <li class="nav-item d-none d-md-block post-ad">
+                <a class="nav-link" href="#">Post an Ad</a>
+              </li>
+          </ul>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse position-md-absolute" id="collapsibleNavbar">
+          <ul class="navbar-nav justify-content-around">
+
+            <li class="nav-item nav-cart-2">
+                <a class="nav-link" href="#"><i class="fas fa-cart-arrow-down">CART</i></a>
+              </li>
+            <li class="nav-item d-md-none post-ad">
+                <a class="nav-link" href="#">Post and Ad</a>
+              </li>
+            <li class="nav-item messages">
+              <a class="nav-link" href="#"><i class="far fa-envelope">MESSAGES</i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><img src="images/pp.jfif" class="prof-pics"></a>
+            </li>
+            
+            </li>    
+          </ul>
+        </div>  
+      </nav>
+
+      <div class="search-section container-fluid">
+        <div class="page-name mx-auto">
+          <h1>ACCU</h1>
+          <p>The best place to get your special needs met</p>
+        </div>
+
+        <form class="filter-selector mx-auto">
+          <select class="filters">
+            <option value="0">Categories</option>
+          <option value="1">School</option>
+          <option value="2">Colleges</option>
+          <option value="3">Crash Courses</option>
+          <option value="4">Photoshop</option>
+          <option value="5">Coding</option>
+          <option value="6">Personal Care</option>
+          <option value="7">UI Designing0</option>
+          <option value="8">Apptitude</option>
+          <option value="9">Interview Prep</option>
+          <option value="10">Resume Building</option>
+          <option value="11">Kinder garden</option>
+          <option value="12">React</option>
+          <option value="13">Data Science</option>
+          <option value="14">Data Analyst</option>
+
+          </select>
+
+          <input type="text" placeholder="What is your search term?" class="filters">
+          <input type="text" placeholder="Location" class="filters">
+
+          <a href="#" class="search-button mx-auto">SEARCH</a>
+
+        </form>
+
+
+
+      </div>
+
+      <footer class="container-xl">
+        <div class="row mx-0">
+          <div class="col-md-6 col-lg-3 footer-categories order-lg-1">
+
+            <h4>Categories</h4>
+  
+            
+
+              <ul class="footer-navbar  list-style-type-none">
+                <li><a href="#" class="footer-navlink">School</a></li>
+                <li><a href="#" class="footer-navlink">Colleges</a></li>
+                <li><a href="#" class="footer-navlink">Crash Courses</a></li>
+                <li><a href="#" class="footer-navlink">Photoshop</a></li>
+                <li><a href="#" class="footer-navlink">Coding</a></li>
+                <li><a href="#" class="footer-navlink">Personal Care</a></li>
+                <li><a href="#" class="footer-navlink">UI Designing</a></li>
+                <li><a href="#" class="footer-navlink">Apptitude</a></li>
+                <li><a href="#" class="footer-navlink">Interview Prep</a></li>
+                <li><a href="#" class="footer-navlink">Resume Building</a></li>
+                <li><a href="#" class="footer-navlink">Kinder garden</a></li>
+                <li><a href="#" class="footer-navlink">React</a></li>
+                <li><a href="#" class="footer-navlink">Data Science</a></li>
+                <li><a href="#" class="footer-navlink">Data Analyst</a></li>
+              </ul>
+          
+          </div>
+
+          <div class="col-md-6 col-lg-3 footer-navigation order-lg-2">
+            <h4>Navigation</h4>
+    
+            
+
+              <ul class="footer-navbar two-column-list list-style-type-none">
+                <li><a href="#" class="footer-navlink">School</a></li>
+                <li><a href="#" class="footer-navlink">Colleges</a></li>
+                <li><a href="#" class="footer-navlink">Crash Courses</a></li>
+                <li><a href="#" class="footer-navlink">Photoshop</a></li>
+                <li><a href="#" class="footer-navlink">Coding</a></li>
+                <li><a href="#" class="footer-navlink">Personal Care</a></li>
+                <li><a href="#" class="footer-navlink">UI Designing</a></li>
+              </ul>
+          
+          </div>
+
+          <div class="col-md-6 col-lg-3 footer-about">
+
+            <h3><i class="fas fa-dice-d20">ACCU</i> </h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+              sed do eiusmod tempor incididunt ut labore et dolore magna
+              aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+               ullamco</p>
+          
+          </div>
+
+          <div class="col-md-6 col-lg-3 footer-options order-lg-3">
+            
+            <form class="filter-selector mx-auto flex-column align-items-end">
+
+              <div class="d-flex align-items-center">
+
+                <label for="language-select">Language</label>
+              <select class="filters-footer" id="language-select">
+                <option value="0">Categories</option>
+              <option value="1">School</option>
+              <option value="2">Colleges</option>
+              <option value="3">Crash Courses</option>
+              <option value="4">Photoshop</option>
+              <option value="5">Coding</option>
+              </select>
+              </div>
+              
+
+              <div class="d-flex align-items-center">
+
+                <label for="location-select">Location</label> 
+
+              <select class="filters-footer" id="location-select">
+                <option value="0">Categories</option>
+              <option value="1">School</option>
+              <option value="2">Colleges</option>
+              <option value="3">Crash Courses</option>
+              <option value="4">Photoshop</option>
+              <option value="5">Coding</option>
+              </select>
+
+
+              </div>
+
+             
+
+              <div class="d-flex align-items-center">
+
+                <label for="currency-select">Currency</label>
+              <select class="filters-footer" id="currency-select">
+                <option value="0">Categories</option>
+              <option value="1">School</option>
+              <option value="2">Colleges</option>
+              <option value="3">Crash Courses</option>
+              <option value="4">Photoshop</option>
+              <option value="5">Coding</option>
+              </select>
+              </div>
+              
+          
+          </div>
+
+        </div>
+
+      </footer>
+
+      <diV>
+        <span>Copyright (c) 2020. This site was built by Opeyemi</span>
+
+      </diV>
+
+
+
+
+
+
+
+</body>
+</html>
