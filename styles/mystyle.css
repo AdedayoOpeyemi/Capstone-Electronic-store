@@ -279,6 +279,15 @@ label {
   flex-grow: 1;
 }
 
+.search-list-detail {
+  flex-grow: 1;
+}
+
+.result-container {
+  border: solid 1px red;
+  padding: 15px;
+}
+
 @media screen and (min-width: 500px){
 .product {
     min-height: 320px;
@@ -321,6 +330,10 @@ label {
         max-width: 992px;
     }
 
+    .filter-select {
+      min-width: 200px;
+    }
+
     .search-section {
         padding: 3rem;
     }
@@ -329,6 +342,16 @@ label {
       width: 200px;
       height: 150px;
     }
+
+    .result-listing {
+      padding: 15px 0 15px 0;
+      border-left: solid 1px red;
+      border-right: solid 1px red;
+      flex-grow: 1;
+    }
+  
+
+    
 /* 
     .main-menu {
         padding-left: 100px;
