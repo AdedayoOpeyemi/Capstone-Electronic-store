@@ -266,6 +266,11 @@ label {
   margin-left: 20px;
 }
 
+.filter-select label{
+  font-family: "Gotham-Rounded-Light", sans-serif;
+  color: #888888;
+}
+
 .result-listing-image {
   width: 140px;
   height: 140px;
