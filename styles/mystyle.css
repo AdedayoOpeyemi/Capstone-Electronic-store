@@ -240,12 +240,14 @@ select {
 .condition,
 .product-price {
   color: #d35266;
+  font-weight: 600;
 }
 
 .fa-plus-square {
   font-size: 24px;
   color: #888;
 }
+
 
 .fa-chevron-right,
 .fa-chevron-left {
