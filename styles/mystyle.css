@@ -138,10 +138,10 @@ footer p {
   font-family: "Helvetica-Neue-Bold", sans-serif;
 }
 
-.page-name  {
+.page-name p {
   font-family: "Helvetica-Neue-Medium", sans-serif;
   color: white;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .search-section {
@@ -259,7 +259,6 @@ select {
   font-size: 24px;
   color: #888;
 }
-
 
 .fa-chevron-right,
 .fa-chevron-left {
