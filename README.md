@@ -27,7 +27,7 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://raw.githack.com/AdedayoOpeyemi/Capstone-Electronic-store/feature-branch/index.html)
 
 
 ## Getting Started
