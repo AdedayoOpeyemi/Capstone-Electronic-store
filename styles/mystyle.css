@@ -268,6 +268,11 @@ label {
   padding: 15px;
 }
 
+.filter-select div ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
 .filter-select h6 {
   font-family: "Gotham-Rounded-Bold", sans-serif;
   color: #888;
