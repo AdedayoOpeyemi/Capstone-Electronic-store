@@ -76,6 +76,11 @@ ul {
   right: 40px;
 }
 
+.fa-chevron-circle-left,
+.fa-chevron-circle-right {
+  color: #d35266;
+}
+
 footer li a,
 footer p {
   color: #888 !important;
