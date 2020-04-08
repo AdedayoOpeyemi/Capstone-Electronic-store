@@ -341,6 +341,14 @@ label {
   color: white;
 }
 
+.pg-num {
+  padding: 10px;
+  background: white;
+  color: #888;
+  margin: 10px;
+  border: solid 1px #888;
+}
+
 @media screen and (min-width: 500px) {
   .product {
     min-height: 320px;
