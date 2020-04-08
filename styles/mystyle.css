@@ -54,7 +54,7 @@
 }
 
 body {
-  min-width: 400px;
+  min-width: 500px;
   background: white;
 }
 
@@ -131,11 +131,17 @@ footer p {
 
 .page-name {
   text-align: center;
-  font-family: "Gotham-Bold", sans-serif;
 }
 
 .page-name h1 {
   color: white;
+  font-family: "Helvetica-Neue-Bold", sans-serif;
+}
+
+.page-name  {
+  font-family: "Helvetica-Neue-Medium", sans-serif;
+  color: white;
+  font-size: 24px;
 }
 
 .search-section {
@@ -192,7 +198,12 @@ select {
 }
 
 .category-header {
-  padding-left: 3rem;
+  color: #888;
+}
+
+.cat-logo {
+  font-size: 30px;
+  margin-right: 1rem;
 }
 
 .category-title-details {
@@ -209,12 +220,13 @@ select {
 
 .product {
   margin: 10px 0;
-  min-height: 230px;
+  min-height: 300px;
 }
 
 .bordered-product {
   background: white;
   border: solid 1px lightgrey;
+  min-height: 280px;
 }
 
 .product-image {
@@ -445,6 +457,11 @@ label {
 
   .search-section {
     padding: 3rem;
+  }
+
+  .category-header {
+    padding-left: 3rem;
+    color: #888;
   }
 
   .product {
