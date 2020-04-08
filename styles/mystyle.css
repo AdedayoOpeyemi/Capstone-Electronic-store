@@ -296,7 +296,6 @@ label {
 
 .ad-container {
   padding: 30px;
-  width: 80%;
 }
 
 .result-container {
@@ -398,6 +397,10 @@ label {
   #collapsibleNavbar {
     right: 30px;
     flex-grow: 0 !important;
+  }
+
+  .ad-container {
+    width: 80%;
   }
 
   .filter-selector {
