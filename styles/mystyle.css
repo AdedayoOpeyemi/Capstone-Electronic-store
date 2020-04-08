@@ -354,6 +354,25 @@ label {
   object-fit: contain;
 }
 
+.image-nav {
+  padding: 10px !important;
+  /* font-size: 20px; */
+  margin: 0 !important;
+  bottom: 0;
+  right: 0;
+  background: #383838;
+  
+}
+
+.image-nav .fa-chevron-left,
+.image-nav .fa-chevron-right {
+  margin: 0 !important;
+  color: #d35266;
+  margin-right: 10px;
+}
+
+
+
 .result-listing-details {
   flex-grow: 1;
 }
