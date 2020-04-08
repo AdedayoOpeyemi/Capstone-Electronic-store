@@ -146,7 +146,8 @@ footer p {
   font-family: "Gotham-Bold", sans-serif;
 }
 
-main {
+main,
+.result-section {
   background: #f7f7f7;
 }
 
@@ -419,6 +420,7 @@ label {
   .filter-select {
     min-width: 200px;
     margin-top: 2rem;
+    background: white;
   }
 
   .search-section {
