@@ -373,6 +373,15 @@ label {
   border: solid 1px #888;
 }
 
+.copyright-social,
+.social-links {
+  color: #888;
+}
+
+.copyright {
+  font-size: 12px;
+}
+
 @media screen and (min-width: 500px) {
   .product {
     min-height: 320px;
