@@ -1,41 +1,42 @@
-# Project Name
+# HMTL/CSS Capstone Project -Electronics Store
 
-> One paragraph statement about the project.
+> This project is to develop the Home page and Search page of an Online store using the template designed by Mohammed Awad on [Behance](https://www.behance.net/gallery/24796463/ZATTIX)
 
-![screenshot](./app_screenshot.png)
+> The pages are to be designed with 2 breakpoints so the following views are expected Mobile, Tablet and Desktop
+
+![Homepage Mobile view](./images/homepage-mobileview.png)
+
+![Homepage Tablet view](./images/homepage-tabletview.png)
+
+![Homepage Desktop view](./images/homepage-desktopview.png)
+
+![Search result page Mobile view](./images/searchpage-mobileview.png)
+
+![Search result page Tablet view](./images/searchpage-tabletview.png)
+
+![Search result page Desktop view](./images/searchpage-desktopview.png)
 
 Additional description about the project and its features.
 
 ## Built With
 
-- Major languages,
-- frameworks,
-- technologies used
+- HTML, CSS
+- Bootstrap4
+- Flexbox and Grid
+- Images used for this project were gotten from pngimages.com
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://raw.githack.com/AdedayoOpeyemi/Capstone-Electronic-store/feature-branch/index.html)
 
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+
+### To get a local copy up and running follow these simple example steps.
 
 
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
+- run the following command $git clone git@github.com:AdedayoOpeyemi/Capstone-Electronic-store.git
 
 
 
@@ -43,15 +44,10 @@ To get a local copy up and running follow these simple example steps.
 
 👤 **Author1**
 
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
+- Github: [@Adedayoopeyemi](https://github.com/Adedayoopeyemi)
+- Twitter: [@oyelesiopy](https://twitter.com/oyelesiopy)
+- Linkedin: [linkedin](https://linkedin.com/opeyemioyelesi)
 
-👤 **Author2**
-
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
 
 ## 🤝 Contributing
 

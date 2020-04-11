@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ACCU - Search</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/50245aec8d.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/mystyle.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <nav class="navbar px-md-5 navbar-expand-lg top-nav-bar justify-content-between navbar-dark position-relative">
+        <ul class="nav main-menu">
+            <li class="nav-item">
+
+              <a class="navbar-brand" href="./index.html"><i class="fas fa-dice-d20">ACCU</i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html"><i class="fas fa-home active">HOME</i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-border-none">CATEGORY</i></a>
+            </li>
+            <li class="nav-item d-none nav-cart-1">
+                <a class="nav-link" href="#"><i class="fas fa-cart-arrow-down">CART</i></a>
+              </li>
+              <li class="nav-item d-none d-md-block post-ad">
+                <a class="nav-link" href="#">Post an Ad</a>
+              </li>
+          </ul>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse position-md-absolute" id="collapsibleNavbar">
+          <ul class="navbar-nav justify-content-around">
+
+            <li class="nav-item nav-cart-2">
+                <a class="nav-link" href="#"><i class="fas fa-cart-arrow-down">CART</i></a>
+              </li>
+            <li class="nav-item d-md-none post-ad">
+                <a class="nav-link" href="#">Post and Ad</a>
+              </li>
+            <li class="nav-item messages">
+              <a class="nav-link" href="#"><i class="far fa-envelope">MESSAGES</i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><img src="images/pp.jfif" alt="user profile picture" class="prof-pics"></a>
+            </li>
+            
+               
+          </ul>
+        </div>  
+      </nav>
+
+      <div class="search-section container-fluid">
+        <div class="page-name mx-auto">
+          <h1>ACCU</h1>
+          <p>The best place to get your special needs met</p>
+        </div>
+
+        <form class="filter-selector mx-auto">
+          <select class="filters">
+            <option value="0">Categories</option>
+          <option value="1">Cars</option>
+          <option value="2">Boats</option>
+          <option value="3">Motor Cycle</option>
+          <option value="4">Buses</option>
+          <option value="5">Trucks</option>
+          <option value="6">Vans</option>
+          <option value="7">Helicopters</option>
+          <option value="8">Accesories</option>
+          <option value="9">Performance Mods</option>
+          <option value="10">Body Kits</option>
+          <option value="11">Spare parts</option>
+          <option value="12">Tool Set</option>
+          <option value="13">Safety</option>
+
+          </select>
+
+          <input type="text" placeholder="What is your search term?" class="filters">
+          <input type="text" placeholder="Location" class="filters">
+
+          <a href="./search-result.html" class="search-button mx-auto">SEARCH</a>
+
+        </form>
+
+
+
+      </div>
+
+      <div class="result-section d-flex flex-column flex-md-row container-xl">
+          <div class="filter-select d-flex flex-md-column justify-content-around justify-content-md-start">
+
+            <div>
+
+                <h6>Mileage</h6>
+
+                <ul>
+                    <li>
+                    <input type="checkbox" id="0-10k" name="0-10k" value="0-10k">
+                    <label for="0-10k"> 0 - 10k</label>
+
+                    </li>
+                    <li>
+
+                    <input type="checkbox" id="10k-50k" name="10k-50k" value="10k-50k">
+                    <label for="10k-50k"> 10k - 50k</label><br>
+
+                    </li>
+                    <li>
+                        <input type="checkbox" id="50k-100k" name="50k-100k" value="50k-100k">
+                    <label for="50k-100k"> 50k - 100k</label><br>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" id="100k-150k" name="100k-150k" value="100k-150k">
+                    <label for="100k-150k"> 100k - 150k</label><br>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" id=">150k" name=">150k" value=">150k">
+                    <label for=">150k"> > 150k</label><br>
+                    </li>
+
+
+
+                </ul>
+
+
+            </div>
+
+            <div>
+
+                <h6>Condition</h6>
+
+                <ul>
+                    <li>
+                    <input type="checkbox" id="New" name="New" value="New">
+                    <label for="New"> New</label>
+
+                    </li>
+                    <li>
+
+                    <input type="checkbox" id="Old" name="Old" value="Old">
+                    <label for="Old"> Old</label><br>
+
+                    </li>
+                    <li>
+                        <input type="checkbox" id="refurbished" name="refurbished" value="refurbished">
+                    <label for="refurbished">Refurbished</label><br>
+                    </li>
+
+
+                </ul>
+
+            </div>
+
+            <div>
+                <h6>Fuel Type</h6>
+                <ul>
+                    <li>
+                    <input type="checkbox" id="Petrol" name="Petrol" value="Petrol">
+                    <label for="Petrol">Petrol</label>
+
+                    </li>
+                    <li>
+
+                    <input type="checkbox" id="Diesel" name="Diesel" value="Diesel">
+                    <label for="Diesel">Diesel</label><br>
+
+                    </li>
+                    <li>
+                        <input type="checkbox" id="Electric" name="Electric" value="Electric">
+                    <label for="Electric"> Electric</label><br>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" id="Hybrid" name="Hybrid" value="Hybrid">
+                    <label for="Hybrid"> Hybrid</label><br>
+                    </li>
+
+
+                </ul>
+
+
+            </div>
+
+          </div>
+
+          <div class="result-listing">
+
+            <div> <p class="pl-3">125 Result found for your search.</p></div>
+
+
+              <div class="d-flex result-container mb-3">
+                  <div class="result-listing-image position-relative">
+                    <img src="images/bmw-car-1.png" alt="BMW SUV white" >
+                    <div class="position-absolute image-nav">
+                        <i class="fas fa-chevron-left"></i>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    
+
+                  </div>
+                  
+                  <div class="search-list-detail">
+                      <h5>BMW X5 Series</h5>
+                      <h6 class="condition-detail">Used</h6>
+                      <p class="d-none d-md-block"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                        
+                      </p>
+                      <p class="location-detail"><b>Location:</b> Liverpool, UK</p>
+                      <div class="d-flex justify-content-between w-100 align-items-center">
+                          <span class="time-posted">20, March 2020</span>
+                          <span class="price-detail">$20,000</span>
+
+                      </div>
+
+                  </div>
+
+              </div>
+
+              <div class="d-flex result-container mb-3">
+                <div class="result-listing-image position-relative">
+                  <img src="images/bentley-car-1.png" alt="Bentley live-watch navy blue color">
+                  <div class="position-absolute image-nav">
+                    <i class="fas fa-chevron-left"></i>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+
+                </div>
+                
+                <div class="search-list-detail">
+                    <h5>Bentley Live-Watch</h5>
+                    <h6 class="condition-detail">Used</h6>
+                    <p class="d-none d-md-block"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                      
+                    </p>
+                    <p class="location-detail"><b>Location:</b> Liverpool, UK</p>
+                    <div class="d-flex justify-content-between w-100 align-items-center">
+                        <span class="time-posted">20, March 2020</span>
+                        <span class="price-detail">$20,000</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="d-flex result-container mb-3">
+                <div class="result-listing-image position-relative">
+                  <img src="images/cadillac-car-1.png" alt="Cadillac Excutive series">
+                  <div class="position-absolute image-nav">
+                    <i class="fas fa-chevron-left"></i>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+
+                </div>
+                
+                <div class="search-list-detail">
+                    <h5>Cadillac Excutive</h5>
+                    <h6 class="condition-detail">Used</h6>
+                    <p class="d-none d-md-block"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                      
+                    </p>
+                    <p class="location-detail"><b>Location:</b> Liverpool, UK</p>
+                    <div class="d-flex justify-content-between w-100 align-items-center">
+                        <span class="time-posted">20, March 2020</span>
+                        <span class="price-detail">$20,000</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="d-flex result-container mb-3">
+                <div class="result-listing-image position-relative">
+                  <img src="images/cadillac-classic-car-1.png" alt="Cadilass classic lemon green color">
+                  <div class="position-absolute image-nav">
+                    <i class="fas fa-chevron-left"></i>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+
+                </div>
+                
+                <div class="search-list-detail">
+                    <h5>Cadillac Classic 1965 model</h5>
+                    <h6 class="condition-detail">Used</h6>
+                    <p class="d-none d-md-block"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                      
+                    </p>
+                    <p class="location-detail"><b>Location:</b> Liverpool, UK</p>
+                    <div class="d-flex justify-content-between w-100 align-items-center">
+                        <span class="time-posted">20, March 2020</span>
+                        <span class="price-detail">$20,000</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="d-flex result-container mb-3">
+                <div class="result-listing-image position-relative">
+                  <img src="images/infiniti-QX30-car-1.png" alt="infiniti QX30 dark gey color">
+                  <div class="position-absolute image-nav">
+                    <i class="fas fa-chevron-left"></i>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+
+                </div>
+                
+                <div class="search-list-detail">
+                    <h5>Infiniti QX50 </h5>
+                    <h6 class="condition-detail">Used</h6>
+                    <p class="d-none d-md-block"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                      
+                    </p>
+                    <p class="location-detail"><b>Location:</b> Liverpool, UK</p>
+                    <div class="d-flex justify-content-between w-100 align-items-center">
+                        <span class="time-posted">20, March 2020</span>
+                        <span class="price-detail">$20,000</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="d-flex result-container mb-3">
+                <div class="result-listing-image position-relative">
+                  <img src="images/mercedes-ml350-car-1.png" alt="Mercedes Benz ML350 white color">
+                  
+
+                </div>
+                
+                <div class="search-list-detail">
+                    <h5>Mercedece ML350 2016</h5>
+                    <h6 class="condition-detail">New</h6>
+                    <p class="d-none d-md-block"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                      
+                    </p>
+                    <p class="location-detail"><b>Location:</b> Liverpool, UK</p>
+                    <div class="d-flex justify-content-between w-100 align-items-center">
+                        <span class="time-posted">20, March 2020</span>
+                        <span class="price-detail">$20,000</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="d-flex result-container mb-3">
+                <div class="result-listing-image position-relative">
+                  <img src="images/cadillac-car-1.png" alt="Cadillac Excutive series">
+                  <div class="position-absolute image-nav">
+                    <i class="fas fa-chevron-left"></i>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+
+                </div>
+                
+                <div class="search-list-detail">
+                    <h5>Cadillac Excutive</h5>
+                    <h6 class="condition-detail">Used</h6>
+                    <p class="d-none d-md-block"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                      
+                    </p>
+                    <p class="location-detail"><b>Location:</b> Liverpool, UK</p>
+                    <div class="d-flex justify-content-between w-100 align-items-center">
+                        <span class="time-posted">20, March 2020</span>
+                        <span class="price-detail">$20,000</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="d-flex result-container mb-3">
+                <div class="result-listing-image position-relative">
+                  <img src="images/bmw-car-1.png" alt="BMW SUV white" >
+                  <div class="position-absolute image-nav">
+                    <i class="fas fa-chevron-left"></i>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+
+                </div>
+                
+                <div class="search-list-detail">
+                    <h5>BMW X5 Series</h5>
+                    <h6 class="condition-detail">Used</h6>
+                    <p class="d-none d-md-block"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                      
+                    </p>
+                    <p class="location-detail"><b>Location:</b> Liverpool, UK</p>
+                    <div class="d-flex justify-content-between w-100 align-items-center">
+                        <span class="time-posted">20, March 2020</span>
+                        <span class="price-detail">$20,000</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="d-flex result-container mb-3">
+                <div class="result-listing-image position-relative">
+                  <img src="images/cadillac-classic-car-1.png" alt="Cadilass classic lemon green color">
+                  <div class="position-absolute image-nav">
+                    <i class="fas fa-chevron-left"></i>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+
+                </div>
+                
+                <div class="search-list-detail">
+                    <h5>Cadillac Classic 1965 model</h5>
+                    <h6 class="condition-detail">Used</h6>
+                    <p class="d-none d-md-block"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                      
+                    </p>
+                    <p class="location-detail"><b>Location:</b> Liverpool, UK</p>
+                    <div class="d-flex justify-content-between w-100 align-items-center">
+                        <span class="time-posted">20, March 2020</span>
+                        <span class="price-detail">$20,000</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="d-flex result-container mb-3">
+                <div class="result-listing-image position-relative">
+                  <img src="images/bentley-car-1.png" alt="Bentley live-watch navy blue color">
+                  <div class="position-absolute image-nav">
+                    <i class="fas fa-chevron-left"></i>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+
+                </div>
+                
+                <div class="search-list-detail">
+                    <h5>Bentley Live-Watch</h5>
+                    <h6 class="condition-detail">Used</h6>
+                    <p class="d-none d-md-block"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                      
+                    </p>
+                    <p class="location-detail"><b>Location:</b> Liverpool, UK</p>
+                    <div class="d-flex justify-content-between w-100 align-items-center">
+                        <span class="time-posted">20, March 2020</span>
+                        <span class="price-detail">$20,000</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="d-flex justify-content-center mx-auto">
+                <a href="#" class="pg-num">1</a>
+                <a href="#" class="pg-num">2</a>
+                <a href="#" class="pg-num">3</a>
+                <a href="#" class="pg-num">4</a>
+                <a href="#" class="pg-num">5</a>
+                <a href="#" class="pg-num">...</a>
+              </div>
+
+
+          </div>
+
+
+
+      </div>
+
+      <footer class="container-xl">
+        <div class="row mx-0">
+          <div class="col-md-6 col-lg-3 footer-categories order-lg-1">
+
+            <h4>Categories</h4>
+  
+            
+
+              <ul class="footer-navbar">
+                <li><a href="#" >Cars</a></li>
+                <li><a href="#" >Trucks</a></li>
+                <li><a href="#" >Motorcycles</a></li>
+                <li><a href="#" >Boats</a></li>
+                <li><a href="#" >Vans & Buses</a></li>
+                <li><a href="#" >Perfomance Mods</a></li>
+                <li><a href="#" >Accesories</a></li>
+                <li><a href="#" >Body Kits</a></li>
+                <li><a href="#" >Mini-Aircrafts</a></li>
+                <li><a href="#" >Wheels</a></li>
+                <li><a href="#" >Tools</a></li>
+                <li><a href="#" >Parts</a></li>
+                <li><a href="#" >Salvage</a></li>
+                <li><a href="#" >Special deals</a></li>
+              </ul>
+          
+          </div>
+
+          <div class="col-md-6 col-lg-3 footer-navigation order-lg-2">
+            <h4>Navigation</h4>
+    
+            
+
+              <ul class="footer-navbar">
+                <li><a href="#" >Account</a></li>
+                <li><a href="#" >Newsletter</a></li>
+                <li><a href="#" >Sign in</a></li>
+                <li><a href="#" >Membership</a></li>
+                <li><a href="#" >Referal</a></li>
+                <li><a href="#" >Categories</a></li>
+                <li><a href="#" >Search</a></li>
+              </ul>
+          
+          </div>
+
+          <div class="col-md-6 col-lg-3 footer-about">
+
+            <h3><i class="fas fa-dice-d20">ACCU</i> </h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+              sed do eiusmod tempor incididunt ut labore et dolore magna
+              aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+               ullamco</p>
+          
+          </div>
+
+          <div class="col-md-6 col-lg-3 footer-options order-lg-3">
+            
+            <form class="filter-selector mx-auto flex-column align-items-end">
+
+              <div class="d-flex align-items-center">
+
+                <label for="language-select">Language</label>
+              <select class="filters-footer" id="language-select">
+                <option value="0">English</option>
+              <option value="1">French</option>
+              <option value="2">Spanish</option>
+              <option value="3">German</option>
+              <option value="4">Italian</option>
+              <option value="5">Portugese</option>
+              </select>
+              </div>
+              
+
+              <div class="d-flex align-items-center">
+
+                <label for="location-select">Location</label> 
+
+              <select class="filters-footer" id="location-select">
+                <option value="0">North America</option>
+              <option value="1">Europe</option>
+              <option value="2">Asia</option>
+              <option value="3">Africa</option>
+              </select>
+
+
+              </div>
+
+             
+
+              <div class="d-flex align-items-center">
+
+                <label for="currency-select">Currency</label>
+              <select class="filters-footer" id="currency-select">
+                <option value="0">US Dollars</option>
+              <option value="1"> Pounds</option>
+              <option value="2">Euro</option>
+              <option value="3">Yen</option>
+              <option value="4">CAD</option>
+
+              </select>
+              </div>
+
+            </form>
+              
+          
+          </div>
+
+        </div>
+
+      </footer>
+
+      <diV class="d-flex justify-content-between align-items-end w-100 p-2 copyright-social container-xl">
+        <span class="copyright p-2">Copyright (c) 2020. This site was built by Opeyemi using images from pngimg.com</span>
+        <div class="d-flex">
+          <a href="#" class="p-2 social-links"><i class="fab fa-facebook fa-2x" aria-hidden="true"></i></a>
+          <a href="#" class="p-2 social-links"><i class="fab fa-instagram fa-2x" aria-hidden="true"></i></a>
+          <a href="#" class="p-2 social-links"><i class="fab fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+          <a href="#" class="p-2 social-links"><i class="fab fa-google-plus-g fa-2x" aria-hidden="true"></i></a>
+
+        </div>
+
+      </diV>
+
+
+
+
+
+
+</body>
+</html>
